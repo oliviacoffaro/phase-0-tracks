@@ -10,3 +10,5 @@ A branch is what is sounds like, breaking off from the master, creating a differ
 A commit is saving your work into your repository, when making a commit message, you should clearly state the changes that are made in that commit so it's easy to go back later and know what version each commit is
 * What is a merge conflict?
 when there are conflicting edits
+
+here is my edit :)
