@@ -11,3 +11,11 @@
 .list{
   font-size: .8em
 }
+
+.list:hover{
+  color: #FF0000;
+}
+
+section > ul {
+   background-color: yellow;
+}
