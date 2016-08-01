@@ -1,0 +1,20 @@
+Name at least three categories of CSS adjustments (example: colors)?
+  font-family
+  background-color
+  font-size
+What are the three ways to link a CSS rule to an HTML document? Which one is the best and why?
+  inline
+  external style sheet - this one is the best! keeps your code clean and can apply to several docs
+  internal style sheet
+What is a selector? Give examples of at least three types of selectors.
+  this is a way to attach your html and css - i've found this to be confusing!
+    1. .class
+    2. #id
+    3. element
+What is the box model?
+  boxing elements in html to tag them to css
+Explain and give an example of the cascading effect of CSS.
+  in CSS order is important and your style sheet is going to read the last command if you give it two conflicting commands
+Name two CSS techniques that assist in responsive design.
+  display
+  width

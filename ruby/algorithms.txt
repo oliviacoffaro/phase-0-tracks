@@ -1,0 +1,10 @@
+#Robot Using an Elevator
+-Ask user:
+  -Current Floor, Desired Floor
+  -If current floor > desired floor, press down button
+    -else press up
+-Once the elevator door only enter
+-Walk parimeter of space until one locates panel of buttons
+  -Press button that is = to user input "desired floor"
+
+#

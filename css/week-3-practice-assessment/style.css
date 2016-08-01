@@ -8,3 +8,15 @@ body{
   border: 10px solid white;
   font-style: italic;
 }
+h1:hover{
+color: red;
+}
+h1{
+  letter-spacing: 0.125em;
+}
+th{
+  text-decoration: underline;
+}
+tr:nth-child(even){
+  background: #CCC
+}
