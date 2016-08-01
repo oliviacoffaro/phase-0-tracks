@@ -1,3 +1,10 @@
 body{
   background-color: pink;
+  color: white;
+  font-family: helvetica;
+}
+.cowabunga{
+  background-color: orange;
+  border: 10px solid white;
+  font-style: italic;
 }
