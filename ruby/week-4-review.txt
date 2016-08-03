@@ -1,0 +1,44 @@
+Variables
+1. What is a variable? Why might a programmer use a variable?
+   variable is a way to store data in ruby - useful for storing large pieces of data, or for instances when we need to gather data from the user
+
+
+2. If the value of first_name is "Abraham" and last_name is "Lincoln", explain the order in which Ruby will run the line full_name = first_name + last_name, and what the final result will be.
+  Ruby will first add the first name and last name, the result will be AbrahamLincoln, but this will not print in your repl unless you ask for puts or p full_name, the equation as it currently is is just telling the computer info, not printing
+
+Data Types
+3. For each of the following data types, write a short definition and give at least one example of when you might use the data type in a program. (Don't use an example we've already provided.)
+
+string - words! "This is a string" "Also" "These" "Are strings" "5"
+integer - whole numbers 2 77 2930
+float - 
+nil
+booleanm - simply true/false
+Algorithms
+4. What is an algorithm?
+
+5. What are two common categories of algorithm in computer science? 
+
+Methods
+6. What is a method? Why might a programmer choose to use a method?
+
+7. Define the following terms as they relate to a method. 
+
+return value - 
+side effect
+parameter
+argument - 
+implicit return
+8. What are global scope and method scope? How do those scopes impact the availability of data at different points in a program?
+
+Control Flow
+9. What is control flow? Why might a programmer choose to use flow control?
+
+10. Define the following terms as they relate to flow control.
+
+loop
+if - conditional statment - if x is true then y
+else - after an if statement, basically a catch-all for remainders
+elsif - you can add elsif for multiple conditional statements
+while - while something is true/false, do something specific
+until - until or up to a certain thing is true/false, do something
