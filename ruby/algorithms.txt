@@ -8,3 +8,12 @@
   -Press button that is = to user input "desired floor"
 
 #Trying to find gymnastics/olympics on tv
+-Turn on tv
+-press tv guide
+  -search upwards
+  -until you find a program called the olympics
+-if program called olympics
+  -press info
+    -see if women's gynastics is in the description
+      -if yes - congrats you found your show
+      -if no - repeat directions starting at search
