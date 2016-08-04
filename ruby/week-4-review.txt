@@ -33,10 +33,11 @@ implicit return
 
 Control Flow
 9. What is control flow? Why might a programmer choose to use flow control?
+  control flow allows for flexibility and gives different outcomes based on the information from the user or other results or values.  Programmers might use control flow to account for the different types of users or different options within a program they've written.  Like at the end of a game there could be one screen for a winner and another for a loser, or setting up an iphone.
 
 10. Define the following terms as they relate to flow control.
 
-loop
+loop - think of a circle, or walking around on a track, once you finish, you will start again
 if - conditional statment - if x is true then y
 else - after an if statement, basically a catch-all for remainders
 elsif - you can add elsif for multiple conditional statements
