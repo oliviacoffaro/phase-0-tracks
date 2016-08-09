@@ -1,3 +1,18 @@
+
+  def adder(arr, item)
+    arr.push(item)
+  end
+
+p adder(["lemon"], "a")
+
+def returns_array(itm1, itm2, itm3)
+  ["#{itm1}", "#{itm2}", "#{itm3}"]
+end
+
+puts returns_array(1, 3, 5)
+
+
+
 sports = ["gymnastics", "football", "polo", "diving", "swimming"]
 sports.slice!(2)
 
@@ -18,6 +33,8 @@ sports.include?("running")
 
 medals = ["gold", "silver", "bronze"]
 
+olmypics = sports|medals
+puts olmypics
 
 # puts "what sport would you like to search for?"
 # search_sports = gets.chomp
