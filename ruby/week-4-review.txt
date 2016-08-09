@@ -11,25 +11,31 @@ Data Types
 
 string - words! "This is a string" "Also" "These" "Are strings" "5"
 integer - whole numbers 2 77 2930
-float - 
-nil
+float - this is a number 4.0 or 56.983
+nil - container, for nothing,
 booleanm - simply true/false
+
 Algorithms
 4. What is an algorithm?
+  An algorithm is steps telling a computer to perform a certain task
 
 5. What are two common categories of algorithm in computer science? 
+  search and sort
 
 Methods
 6. What is a method? Why might a programmer choose to use a method?
+  A method is a procedure that is self contained and object oriented
 
 7. Define the following terms as they relate to a method. 
 
-return value - 
+return value - value that is returned from method
 side effect
-parameter
-argument - 
-implicit return
+parameter - similar to argument, when estabilishing method
+argument - not all methods have argurments, method(argument goes here) when calling method
+implicit return - value that is returned but not printed
+
 8. What are global scope and method scope? How do those scopes impact the availability of data at different points in a program?
+  global scope is within the entire program and available throughout, method scope is local to that method and only available within that method.
 
 Control Flow
 9. What is control flow? Why might a programmer choose to use flow control?
