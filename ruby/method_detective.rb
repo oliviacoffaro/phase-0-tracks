@@ -10,6 +10,8 @@
 
 # "zom".<???>
 # => “zoom”
+puts "zom".insert(1, "o")
+"zom".replace("zoom")
 
 # "enhance".<???>
 # => "    enhance    "
@@ -26,6 +28,7 @@
 # " suspects".<???>
 # => "the usual suspects"
 " suspects".prepend("the usual")
+" suspects".insert(0,"the usual")
 
 # "The case of the disappearing last letter".<???>
 # => "The case of the disappearing last lette"
@@ -33,9 +36,11 @@
 
 # "The mystery of the missing first letter".<???>
 # => "he mystery of the missing first letter"
+"The mystery of the missing first letter".slice(1...39)
 
 # "Elementary,    my   dear        Watson!".<???>
 # => "Elementary, my dear Watson!"
+"Elementary,    my   dear        Watson!".squeeze
 
 # "z".<???>
 # => 122 
