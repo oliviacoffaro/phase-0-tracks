@@ -34,18 +34,29 @@ puts "Do you like the color blue? (yes/no)"
   p client
 # Give the user the opportunity to update a key (no need to loop, once is fine).
   puts "Would you like to change anything? (yes/no)"
-# If the designer says "none", skip it.
+# If the designer says "no", skip it and prints final version
+    edits = nil
     if gets.chomp == "no"
       puts "Great! Here is your final client data: "
       p client
-    elsif gets.chomp == "yes"
-      puts "What would you like to edit?" 
+#But if the designer enters "yes" changes below: 
+    else gets.chomp == "yes"
+      edits = true
     end
 
-#But if the designer enters "decor_theme" 
+if edits == true
+  puts "What would you like to edit?"
+
+
+# Print the latest version of the hash, and exit the program.
+puts "Ok great. Here is your final version"
+p client
+end
+
+
 #(for example), your program should ask for a new value and update the :decor_theme key. 
 #(Hint: Strings have methods that will turn them into symbols, which would be quite handy here.) 
 #You can assume the user will correctly input a key that exists in your hash -- no need to handle user errors.
-# Print the latest version of the hash, and exit the program.
+
 
 
