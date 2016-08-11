@@ -42,23 +42,60 @@ p dog_types
 
 
 
-numbers = [1, 3, 4, 7, 10]
 
 # 1. A method that iterates through the items, deleting any that meet a certain condition 
 # (for example, deleting any numbers that are less than 5).
 
+numbers = [1, 3, 4, 7, 10]
 p numbers
 
 numbers.delete_if {|number| number < 5 }
 
 p numbers
 
+#hash
+
+numbers = {1 => "one", 3 => "three", 5 => "five",10 => "ten"}
+
+p numbers
+numbers.delete_if {|digit, word| digit > 5}
+p numbers
+
 # 2. A method that filters a data structure for only items that do satisfy a certain condition 
 # (for example, keeping any numbers that are less than 5).
+numbers = [1, 2, 4, 6, 20]
+
+p numbers
+
+numbers.delete_if {|number| number > 5 }
+
+p numbers
+
+#hash
+
+
+pet_count = {"dogs" => 3, "cats" => 6, "fish" =>1}
+
+p pet_count
+
+new_pet_count = pet_count.reject {|pet, count| count < 5 }
+
+p new_pet_count
+
 # 3. A different method that filters a data structure for only items satisfying a certain condition -- 
 # Ruby offers several options!
-# 4. A method that will remove items from a data structure until the condition in the block evaluates to false, 
-# then stops (you may not find a perfectly working option for the hash, and that's okay).
+
+#hash
+
+
+pet_count = {"dogs" => 3, "cats" => 6, "fish" =>1}
+
+p pet_count
+
+new_pet_count = pet_count.reject {|pet, count| count < 5 }
+
+p new_pet_count
+
 
 
 
