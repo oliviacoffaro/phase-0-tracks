@@ -1,5 +1,5 @@
-office = {
-    first_desk: {
+office_building = {
+    first_office: {
         assignment: 'Olivia',
         seat_info: {
             total_seats: 6,
@@ -10,7 +10,7 @@ office = {
             "White"
         ]
     },
-    second_desk: {
+    second_office: {
         assignment: 'George',
         seat_info: {
             total_seats: 12,
@@ -21,7 +21,7 @@ office = {
             "White"
         ]
     },
-    third_desk: {
+    third_office: {
         assignment: 'Michael Angelo',
         seat_info: {
             total_seats: 50,
@@ -32,10 +32,10 @@ office = {
 }
 
 
-p office
+p office_building
 
-p office[:first_desk][:colors_avaiable]
+p office_building[:first_office][:colors_avaiable]
 
-p office[:third_desk][:colors_avaiable].push("yellow mellow")
+p office_building[:third_office][:colors_avaiable].push("yellow mellow")
 
-p office
+p office_building[:second_office][:assignment].upcase
