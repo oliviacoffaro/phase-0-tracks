@@ -96,6 +96,9 @@ new_pet_count = pet_count.reject {|pet, count| count < 5 }
 
 p new_pet_count
 
+# A method that will remove items from a data structure until the condition in the block evaluates to false, 
+# then stops (you may not find a perfectly working option for the hash, and that's okay).
+
 
 
 
