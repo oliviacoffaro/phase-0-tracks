@@ -3,33 +3,34 @@
 # and all of the consonants (everything else besides the vowels) to the next consonant in the alphabet. 
 # So 'a' would become 'e', 'u' would become 'a', and 'd' would become 'f'.
 
-# Method = get user to enter their name
+# Ask user to enter their name
 # .downcase to account for upcasing
 puts "Hello Agent, what is your  name?"
 original_name = gets.chomp.downcase
-p original_name
 
-add_to_array([], last_name)
-add_to_array([], first_name)
+# split first and last name into two arrays
+#swap first name and last name 
 
+split_name = original_name.split
+reverse_name = split_name.reverse!
+ 
+ #join back together in a string with a space
+new_name = reverse_name.join(" ")
+p new_name
 
-# swap first name and last name - push into array.reverse
+# each character into it's own array
 
-# def reorder_name(original_name)
-#   original_name.split
-# end
-# each name is it's own array then each letter
-
-letters = original_name.each_char.to_a
+letters = new_name.each_char.to_a
 p letters
 
+#vowel logic
+#if a charcters = vowel then change to next vowel
 vowels = "aeioua"
 
-#vowel logic
-if letters.each.include?(vowels) == true
-  letters.map! { |letter| letter.next }
-  p letters
-  new_name = letters.join('')
+letters.each.include?(vowels)
+if true 
+  p letters.map! { |letter| letter.next }
+  output_name = letters.join('')
 end
 
 #changing vowels
@@ -39,15 +40,7 @@ end
 # if "o" puts "u"
 # if "u" puts "a"
 
-p new_name
 
-
-
-
-
-#vowel logic if aeiou
-
-# Identitfy if it's a vowel or cosonant 
 # iterate through each letter and print the next vowel or consonant  "bcdfghjklmnpqrstvwxyzb"
 
 
