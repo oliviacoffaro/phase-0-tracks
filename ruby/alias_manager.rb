@@ -49,17 +49,17 @@ vowels = "aeioua"
 # if "o" puts "u"
 # if "u" puts "a"
 
-  if letters == "a" 
-    puts "e"
-  elsif letters == "e" 
-    puts "i"
-  elsif letters == "i" 
-    puts "o"
-  elsif letters == "o" 
-    puts "u"
-  elsif letters == "u" 
-    puts "a"
-  end
+  # if letters == "a" 
+  #   puts "e"
+  # elsif letters == "e" 
+  #   puts "i"
+  # elsif letters == "i" 
+  #   puts "o"
+  # elsif letters == "o" 
+  #   puts "u"
+  # elsif letters == "u" 
+  #   puts "a"
+  # end
 
 
 # iterate through each letter and print the next vowel or consonant  "bcdfghjklmnpqrstvwxyzb"
