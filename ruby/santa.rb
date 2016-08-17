@@ -6,7 +6,7 @@ class Santa
     puts "Initializing Santa instance ..."
     @gender = gender
     @ethnicity = ethnicity
-    reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
+    @reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
     age = 0
   end
 
@@ -24,10 +24,12 @@ class Santa
     puts "Santa is now #{age}"
   end
 
-  # #Take in a renindeer's name and move to back - block code?
-  # def get_mad_at
-  #   reindeer_ranking
-  # end
+  #Take in a renindeer's name and move to back - block code?
+  def get_mad_at(specific_reindeer)
+    @reindeer_ranking.delete(specific_reindeer)
+    @reindeer_ranking.push(specific_reindeer)
+    p @reindeer_ranking
+  end
 
   #Setter methods
   # def gender=(new_gender)
@@ -71,5 +73,12 @@ p santas
 
 santas.each do |santa|
   santa.speak
+  santa.eat_milk_and_cookies("lemon")
+  santa.get_mad_at("Dasher")
 end
+
+# santas.each do |santa|
+# santa.get_mad_at("dasher")
+# end
+
 
