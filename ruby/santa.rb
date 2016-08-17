@@ -1,4 +1,7 @@
 class Santa
+  attr_reader :age, :ethnicity
+  attr_accessor :gender
+
   def initialize(gender, ethnicity)
     puts "Initializing Santa instance ..."
     @gender = gender
@@ -14,7 +17,33 @@ class Santa
   def eat_milk_and_cookies(cookie)
     puts "That was a good #{cookie} cookie!"
   end
-  
+
+#Age Santa 1 year
+  def aging(age)
+    age += 1
+    puts "Santa is now #{age}"
+  end
+
+  # #Take in a renindeer's name and move to back - block code?
+  # def get_mad_at
+  #   reindeer_ranking
+  # end
+
+  #Setter methods
+  # def gender=(new_gender)
+  #   @gender = new_gender
+  # end
+
+  #Getter Methods
+
+  # def age
+  #   @age
+  # end
+
+  # def ethnicity
+  #   @ethnicity
+  # end
+
 end
 
 # santas = []
