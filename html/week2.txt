@@ -1,0 +1,28 @@
+Briefly describe your understanding of what the browser does, including definitions of the following:
+  client
+  server
+  render
+The client - or the end user click on a webpage - that contacts a web server asking for the information on that page, such as images, the web server locates this and sends it back to the client, the information then renders on the page, and the end user can see it
+
+What is HTML? In your answer, include definitions of the following:
+  tag - denotes what element
+  element - backbone of html
+  node - the object of an element
+  attribute - larger parts of html
+  block element - takes up an entire row on your page, think about the visual of hitting the enter key after these elements
+  inline element - happens **within** the line - like bold or italics
+
+Very briefly, explain the purpose of the following elements:
+  head - we don't see this on a website, includes things like the title
+  body - this is where the information goes, hold the stuff we see on a website
+  p - paragraph
+  form - way to gather information from the user
+  div - this is a block element, gives your page division
+  span - groups elements
+  select - on a form, you can add a drop down menu, or select
+  h2 - header 2, if you think of this terms of information, it's going to be important stuff on your site
+  ol - ordered list - or numbered list
+  ul - unorder list - or bullet points
+  table - way to group data
+  tr - tag for a row in a table
+  td - data within table cell
