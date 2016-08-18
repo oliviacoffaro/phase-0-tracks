@@ -85,14 +85,12 @@ p larry
 
 
 def santa_generator
+  example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+  example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
   santas = []
   while santas.length < 100
-
-      example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
-      ran_gender = example_genders.sample
-      example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
-      ran_ethnicity = example_ethnicities.sample
-
+    ran_gender = example_genders.sample
+    ran_ethnicity = example_ethnicities.sample
     instance_santa = Santa.new(ran_gender,ran_ethnicity)
     instance_santa.aging(rand(139))
     santas.push(instance_santa)
