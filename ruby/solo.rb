@@ -45,15 +45,23 @@ end
 #User Interface
 
 dbc_students = []
-
-puts "Hello student, what is your name?"
-  instance_name = gets.chomp
-puts "How old are you in years?"
-  instance_age = gets.chomp.to_i
-puts "What spirit animal do you most identify with?"
-  instance_animal = gets.chomp
+user_input = ""
+while
+   user_input != "done"
+  puts "Hello student, what is your name?"
+    instance_name = gets.chomp
+  puts "How old are you in years?"
+    instance_age = gets.chomp.to_i
+  puts "What spirit animal do you most identify with?"
+    instance_animal = gets.chomp
 
 student_instance = DBC_student.new(instance_name, instance_age, instance_animal)
 dbc_students.push(student_instance)
+student_instance.aging
+student_instance.newspaper
+puts "Type done if finished or press enter to add another student"
+user_input = gets.chomp
+end
 
+puts "Here is your final data:" 
 p dbc_students
