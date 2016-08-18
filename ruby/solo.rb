@@ -63,5 +63,5 @@ puts "Type done if finished or press enter to add another student"
 user_input = gets.chomp
 end
 
-puts "Here is your final data:" 
+puts "Great, here is your final data of your DBC cohort: " 
 p dbc_students
