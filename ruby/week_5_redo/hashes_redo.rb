@@ -59,49 +59,40 @@ puts "Would you like to update any of this infomation? (Enter key or type none)"
 
 
 
+applicant = {
+  name: "Anishka Clarke", 
+  address: "1451 Broadway Avenue, New York, NY", 
+  email: "anishka@interiordesigngeniuses.com", 
+  phone: nil, 
+  fave_blue: "indigo", 
+  likes_paisley: true, 
+  likes_chevrons: false, 
+  likes_photorealistic_woods: false, 
+  likes_abstract_woods: true, 
+  ombre: "Practically medieval in its appalling irrelevance"
+}
+
+# How do you delete a key-value pair?
+applicant.delete(:name)
+p applicant
+
+
+# What happens if you try to access the value of a key that is not in the hash?
+  # applicant[:cheese] = nil
+# Regarding the answer you got for the previous question, is there a way to 
+# set a different default return value when a key is not present in the hash?
+
+  if applicant[:cheese] == nil
+    puts "that method does not exist"
+  end
+
+# How can you access just the keys of a hash? What data type does this method return?
+
+
+# How do you remove everything from the hash at once (returning an empty hash)?
+    # applicant.clear
+    # p applicant
+# How can you access just the values of a hash?
 
 
 
-
-
-
-
-
-
-
-
-
-# applicant = {
-#   name: "Anishka Clarke", 
-#   address: "1451 Broadway Avenue, New York, NY", 
-#   email: "anishka@interiordesigngeniuses.com", 
-#   phone: nil, 
-#   fave_blue: "indigo", 
-#   likes_paisley: true, 
-#   likes_chevrons: false, 
-#   likes_photorealistic_woods: false, 
-#   likes_abstract_woods: true, 
-#   ombre: "Practically medieval in its appalling irrelevance"
-# }
-
-# # How do you delete a key-value pair?
-# applicant.delete(:name)
-# p applicant
-
-
-# # What happens if you try to access the value of a key that is not in the hash?
-#   # applicant[:cheese] = nil
-# # Regarding the answer you got for the previous question, is there a way to 
-# # set a different default return value when a key is not present in the hash?
-
-#   if applicant[:cheese] == nil
-#     puts "that method does not exist"
-#   end
-
-# # How can you access just the keys of a hash? What data type does this method return?
-
-
-# # How do you remove everything from the hash at once (returning an empty hash)?
-#     # applicant.clear
-#     # p applicant
-# # How can you access just the values of a hash?

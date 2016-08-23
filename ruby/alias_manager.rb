@@ -30,15 +30,27 @@ letters = new_name.each_char.to_a
 #vowel logic
 #if a charcters = vowel then change to next vowel
 vowels = "aeioua"
+consonant = "bcdfghjklmnpqrstvwxyzb"
 
-# letters.each do
-  letters.map! { |letter| letter.next }
+  letters.map! { |letter| letter.next 
+
+end
+  }
   output_name = letters.join('')
-  p output_name
-# end
+  puts output_name
 
 
 
+ # if letters == "a" 
+ #    puts "e"
+ #  elsif letters == "e" 
+ #    puts "i"
+ #  elsif letters == "i" 
+ #    puts "o"
+ #  elsif letters == "o" 
+ #    puts "u"
+ #  elsif letters == "u" 
+ #    puts "a"
 
 
 
