@@ -1,0 +1,21 @@
+1. What are classes? Be sure to define the following terms in your explanation and describe the relationships between them:
+
+class - an object, there are built in classes, but you can also create your own
+state - think of these also as attributes - state can be a characteristic or or data point of a instance within a class, each instance can have it's own attributes
+behavior - this is another way to say method, function or procedure
+instance variable - this is a variable avaiable across the method or object
+instance method - instance method is a method that that can run on an instance
+
+2. What are attributes?
+  Instance variables
+
+3. Give an example of a real world object, and describe how you might assign its attributes if you were to design a class to represent that object.
+
+4. What is the purpose of the initialize method? When does it run?
+  Runs when a new class is created, this is also a way to store variables
+
+5. What are modules?
+  modules are a set of methods that can be used on several different classes
+
+6. What are the different ways you can use a module?
+  you can assign to multiple classes - some are prexisting within ruby language, they also help with naming
