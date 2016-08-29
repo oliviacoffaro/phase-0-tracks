@@ -7,3 +7,17 @@
 // 3. write a loop in that reverses each letter
 // 4. put letter in empty string
 // 5. print the new string
+
+function reverseString(string)
+  var newString = " "
+  
+function reverseString(string){
+  var newString =  "";
+  for (var i = string.length; i > -1; i--)
+    newString+=(string[i]);
+    console.log(newString);
+    return newString;
+  }
+
+
+function reverseString("hello")
