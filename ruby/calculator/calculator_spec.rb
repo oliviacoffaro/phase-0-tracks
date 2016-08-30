@@ -29,3 +29,13 @@ describe Calculator do
     expect(calculator.divide(6,3)).to eq 2
   end
 end
+
+
+  # it "enables sheild on spaceship" do
+  #   expect(ship.enable_shield).to eq "Now enabling sheild...zip beep beep boop"
+  # end
+
+  # it "travels to a different location" do
+  #   # ship.warp_to("jupitar")
+  #   expect(ship.warp_to("jupitar")).to eq "Traveling at 12 to jupitar"
+  # end

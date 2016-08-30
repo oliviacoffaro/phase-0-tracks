@@ -1,0 +1,19 @@
+Classes, data structures, and iteration are the skills students struggle with the most -- make sure you're solid on using all three of those. But here's the full list of what counts as fair game on the assessment:
+
+Data types, like boolean and string
+  boolean - true false
+  float - 12.343
+  string - "this is a string"
+  integer - 5 AKA Fixnum
+Conditional statements, including complex ones that use && and ||
+Creating, modifying, and iterating through hashes and arrays
+Printing information and gathering information from the user
+  gets.chomp
+Control flow, like if/else, while, and so on
+Declaring methods with or without parameters
+Interpreting method signatures in documentation
+  ???
+The gotchas of implicit return
+  ???
+Classes, including attributes, instance methods, attr_reader, and attr_accessor
+Reading and writing simple RSpec tests

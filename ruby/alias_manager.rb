@@ -7,37 +7,36 @@
 # .downcase to account for upcasing
 
 
-puts "Hello Agent, what is your  name?"
-original_name = gets.chomp.downcase
+def alias
+  puts "Hello Agent, what is your  name?"
+    original_name = gets.chomp.downcase
 
 # split first and last name into two arrays
 #swap first name and last name 
 
-  split_name = original_name.split
-  reverse_name = split_name.reverse!
+    split_name = original_name.split
+    reverse_name = split_name.reverse!
  
  #join back together in a string with a space
-  new_name = reverse_name.join(" ")
+    new_name = reverse_name.join(" ")
  
 
 # each character into it's own array
 
-letters = new_name.each_char.to_a
-
-
-
-
+    letters = new_name.each_char.to_a
 #vowel logic
 #if a charcters = vowel then change to next vowel
-vowels = "aeioua"
-consonant = "bcdfghjklmnpqrstvwxyzb"
 
-  letters.map! { |letter| letter.next 
 
+
+  vowels = %w(a e i o u a)
+  consonant = %w(b c d f g h j k l m n p q r s t v w x y z b)
+  new_alias = letters.map do |letter|
+  letter.next 
+  end
+puts new_alias.join('')
 end
-  }
-  output_name = letters.join('')
-  puts output_name
+ 
 
 
 
