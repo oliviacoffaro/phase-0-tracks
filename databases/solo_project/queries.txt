@@ -1,0 +1,77 @@
+
+Display the information in one table (either table is fine)
+    sqlite> SELECT * FROM employees;
+    |Angela|true|33|1
+    |Peggy|false|19|1
+    |George|false|29|2
+    |Lizzie|true|22|2
+    |James|true|26|2
+    |Leo|true|25|2
+    |James|true|45|1
+    |Oliver|false|79|1
+    |Mickey|false|39|2
+    sqlite>     
+
+Update an item that meets some condition (you can choose a condition that makes sense).
+    UPDATE employees SET full_time="true" WHERE name="George";
+    (no output)
+
+Display the information in both tables using one query.
+
+      sqlite> SELECT * FROM employees, store WHERE employees.store_id = store.id;
+      1|Angela|true|33|1|1|New York
+      2|Peggy|false|19|1|1|New York
+      3|George|true|29|2|2|Pittsburgh
+      4|Lizzie|true|22|2|2|Pittsburgh
+      5|James|true|26|2|2|Pittsburgh
+      6|Leo|true|25|2|2|Pittsburgh
+      7|James|true|45|1|1|New York
+      8|Oliver|false|79|1|1|New York
+      9|Mickey|false|39|2|2|Pittsburgh
+      sqlite> 
+
+      OR
+
+      sqlite> SELECT employees.name, employees.full_time, employees.age, store.name FROM employees
+      Angela|true|33|New York
+      Peggy|false|19|New York
+      George|true|29|Pittsburgh
+      Lizzie|true|22|Pittsburgh
+      James|true|26|Pittsburgh
+      Leo|true|25|Pittsburgh
+      James|true|45|New York
+      Oliver|false|79|New York
+      Mickey|false|39|Pittsburgh
+      sqlite> 
+
+
+Display a narrower selection of columns (fewer columns than all of them, in other words) from both tables using one query.
+      sqlite> SELECT * FROM employees WHERE store_id=1;
+      |Angela|true|33|1
+      |Peggy|false|19|1
+      |James|true|45|1
+      |Oliver|false|79|1
+
+Delete an item that meets some condition (you can choose a condition that makes sense)
+
+    sqlite> DELETE FROM employees WHERE name="Peggy";
+    (peggy went to college)
+
+
+
+INNER JOIN: Returns all rows when there is at least one match in BOTH tables
+LEFT JOIN: Return all rows from the left table, and the matched rows from the right table
+RIGHT JOIN: Return all rows from the right table, and the matched rows from the left table
+FULL JOIN: Return all rows when there is a match in ONE of the tables
+
+***some joins said they were not supported***
+
+sqlite> SELECT employees.name, employees.full_time, employees.age, store.name FROM employees LEFT JOIN store ON employees.store_id = store.id;
+Angela|true|33|New York
+George|true|29|Pittsburgh
+Lizzie|true|22|Pittsburgh
+James|true|26|Pittsburgh
+Leo|true|25|Pittsburgh
+James|true|45|New York
+Oliver|false|79|New York
+Mickey|false|39|Pittsburgh
