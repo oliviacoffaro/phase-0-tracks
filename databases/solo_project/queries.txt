@@ -30,6 +30,20 @@ Display the information in both tables using one query.
       9|Mickey|false|39|2|2|Pittsburgh
       sqlite> 
 
+      OR
+
+      sqlite> SELECT employees.name, employees.full_time, employees.age, store.name FROM employees
+      Angela|true|33|New York
+      Peggy|false|19|New York
+      George|true|29|Pittsburgh
+      Lizzie|true|22|Pittsburgh
+      James|true|26|Pittsburgh
+      Leo|true|25|Pittsburgh
+      James|true|45|New York
+      Oliver|false|79|New York
+      Mickey|false|39|Pittsburgh
+      sqlite> 
+
 
 Display a narrower selection of columns (fewer columns than all of them, in other words) from both tables using one query.
       sqlite> SELECT * FROM employees WHERE store_id=1;
@@ -39,6 +53,9 @@ Display a narrower selection of columns (fewer columns than all of them, in othe
       |Oliver|false|79|1
 
 Delete an item that meets some condition (you can choose a condition that makes sense)
+
+    sqlite> DELETE FROM employees WHERE name="Peggy";
+    (peggy went to college)
 
 
 
