@@ -27,11 +27,12 @@ def add_item(db)
   quantity = gets.chomp
   puts "Add notes about item:"
   comment = gets.chomp
-  db.execute("INSERT INTO list (name, quantity, comment) VALUES (?, ?, ?)", [item_name, quantity, comment])
+  db.execute("INSERT INTO list (item_name, quantity, comment) VALUES (?, ?, ?)", [item_name, quantity, comment])
 end
 
 add_item(db)
-p list
+
+p db.execute("SELECT * FROM list")
 
 def remove_item(db)
   #Loop so you can remove as many items as you want or break if they type none
