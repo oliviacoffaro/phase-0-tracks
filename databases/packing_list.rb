@@ -17,33 +17,59 @@ create_table_cmd = <<-SQL
 SQL
 
 db.execute(create_table_cmd)
+list = db.execute("SELECT * FROM list")
 
 
 def add_item(db)
   #LOOP so you can add as many items as you'd like or break if they type none
-  puts "What would you like to add?"
-  item_name = gets.chomp
-  puts "How many would you like to add?"
-  quantity = gets.chomp
-  puts "Add notes about item:"
-  comment = gets.chomp
-  db.execute("INSERT INTO list (item_name, quantity, comment) VALUES (?, ?, ?)", [item_name, quantity, comment])
+  user_input = " "
+  while user_input == " "
+    puts "What would you like to add? (Or type none)"
+    item_name = gets.chomp
+    if item_name == "none"
+      break
+    else 
+      puts "How many would you like to add?"
+      quantity = gets.chomp
+      puts "Add notes about item:"
+      comment = gets.chomp
+      db.execute("INSERT INTO list (item_name, quantity, comment) VALUES (?, ?, ?)", [item_name, quantity, comment])
+     end
+  end
 end
 
 add_item(db)
 
-p db.execute("SELECT * FROM list")
+
+def print(db, list)
+  puts "Here is your packing list: "
+  db.results_as_hash = true
+  db.execute( "select * from list" ) do |row|
+    puts "#{row['quantity']} #{row['item_name']} - (#{row['comment']})"
+  end
+end
+
+print(db, list)
 
 def remove_item(db)
   #Loop so you can remove as many items as you want or break if they type none
-  puts "What item would you like to delete?"
-  item_name = gets.chomp
-  db.execute("DELETE FROM list WHERE name = ?", [item_name])
+  user_input = " "
+  while user_input == " "
+    puts "What item would you like to delete? (Or type none)"
+    item_name = gets.chomp
+    if item_name == "none"
+      break
+    else
+      db.execute("DELETE FROM list WHERE item_name=?", [item_name])
+    end
+  end
 end
 
+remove_item(db)
+
 #gives the option to print the final list
-def print
-  puts "Here is your packing list: "
-  #iterate through each item in list so it prints like this:
+#iterate through each item in list so it prints like this:
   # puts "#{quantity} #{item_name} - (#{comment})"
-end
+print(db, list)
+
+
